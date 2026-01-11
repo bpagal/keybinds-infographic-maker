@@ -1,0 +1,10 @@
+.iconDiv {
+  border-radius: 8px;
+  border: 1px solid var(--text-color);
+  padding: 8px;
+}
+
+.iconDiv svg {
+  display: block;
+  font-size: 40px;
+}
