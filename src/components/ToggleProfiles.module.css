@@ -1,0 +1,41 @@
+.group {
+  display: inline-flex;
+  border-radius: 8px;
+  border: var(--border-default);
+}
+
+.item {
+  all: unset;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    background-color: #313244;
+  }
+
+  &:first-child {
+    margin-left: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  &:not(:last-child) {
+    border-right: var(--border-default);
+  }
+
+  svg {
+    font-size: 20px;
+  }
+}

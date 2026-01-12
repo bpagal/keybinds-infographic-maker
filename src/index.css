@@ -16,6 +16,9 @@
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 24px;
+
+  /* Borders */
+  --border-default: 1px solid #313244;
 }
 
 *,

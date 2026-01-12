@@ -3,7 +3,7 @@ import styles from "./IconDiv.module.css";
 
 type Props = {
   children: ReactNode;
-  color: string;
+  color?: string;
 };
 
 export const IconDiv = ({ children, color }: Props) => {
