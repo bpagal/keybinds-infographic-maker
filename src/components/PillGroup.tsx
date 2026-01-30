@@ -23,6 +23,7 @@ export const PillGroup = ({ keys, operatingSystem }: Props) => {
           <FaWindows />
         </IconDiv>
       )}
+      <FaPlus />
       {keys.map((key, index) => (
         <Fragment key={index}>
           <div className={styles.pill}>{key}</div>

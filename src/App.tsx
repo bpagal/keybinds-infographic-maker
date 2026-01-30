@@ -6,9 +6,10 @@ import { useMemo, useState } from "react";
 import type { Profile } from "./constants";
 import type { KeybindWithoutId, OperatingSystem } from "./main-types";
 import { macBry } from "./profiles/macBry";
+import { macBee } from "./profiles/macBee";
 
 function App() {
-  const [profile, setProfile] = useState<Profile>("MAC_BRY");
+  const [profile, setProfile] = useState<Profile>("MAC_BEE");
   const operatingSystem: OperatingSystem = profile.includes("MAC")
     ? "macOS"
     : "Windows";
@@ -19,6 +20,8 @@ function App() {
         return windowsBry;
       case "MAC_BRY":
         return macBry;
+      case "MAC_BEE":
+        return macBee;
       default:
         return [];
     }
