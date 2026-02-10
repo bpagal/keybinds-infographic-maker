@@ -33,6 +33,12 @@ export const windowsBry: KeybindWithoutId[] = [
   },
   { keys: ["Z"], action: "Go to previous tab (browsers)" },
   { keys: ["X"], action: "Go to next tab (browsers)" },
-  { keys: ["Shift", "Z"], action: "Move current tab to left (browsers)" },
-  { keys: ["Shift", "X"], action: "Move current tab to right (browsers)" },
+  {
+    keys: ["Shift", "Z"],
+    action: "Move the current tab backward in the tab order (browsers only)",
+  },
+  {
+    keys: ["Shift", "X"],
+    action: "Move the current tab forward in the tab order (browsers only)",
+  },
 ];

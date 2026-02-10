@@ -7,6 +7,7 @@ import type { Profile } from "./constants";
 import type { KeybindWithoutId, OperatingSystem } from "./main-types";
 import { macBry } from "./profiles/macBry";
 import { macBee } from "./profiles/macBee";
+import { windowsBee } from "./profiles/windowsBee";
 
 function App() {
   const [profile, setProfile] = useState<Profile>("MAC_BEE");
@@ -18,6 +19,8 @@ function App() {
     switch (profile) {
       case "WINDOWS_BRY":
         return windowsBry;
+      case "WINDOWS_BEE":
+        return windowsBee;
       case "MAC_BRY":
         return macBry;
       case "MAC_BEE":
