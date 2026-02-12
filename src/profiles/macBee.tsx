@@ -7,6 +7,7 @@ import {
   FaViber,
   FaChrome,
   FaNoteSticky,
+  FaSpotify,
 } from "react-icons/fa6";
 import type { KeybindWithoutId } from "../main-types";
 
@@ -50,6 +51,11 @@ export const macBee: KeybindWithoutId[] = [
     keys: ["D"],
     action: "Open or switch to Notes",
     icon: <FaNoteSticky style={{ color: "#FFD52E" }} />,
+  },
+  {
+    keys: ["F"],
+    action: "Open or switch to Spotify",
+    icon: <FaSpotify style={{ color: "#1DB954" }} />,
   },
   {
     keys: ["Shift", "Tab"],
